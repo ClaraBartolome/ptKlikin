@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.home.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--region Top CardViews-->
+        <LinearLayout
+            android:id="@+id/llayout_cv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="horizontal">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="8dp"
+                style="?attr/materialCardViewFilledStyle"
+                android:background="@color/darkBlue"
+                android:backgroundTint="@color/darkBlue"
+                android:layout_weight="1"
+                app:cardElevation="4dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:checkable="true">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tx_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:textColor="@color/white"
+                        android:textSize="32dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:text="100" />
+
+                    <TextView
+                        android:id="@+id/tx_title_body"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="16dp"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        app:layout_constraintStart_toStartOf="@id/tx_header"
+                        app:layout_constraintTop_toBottomOf="@id/tx_header"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:text="Comercios" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="8dp"
+                style="?attr/materialCardViewFilledStyle"
+                android:background="@color/white"
+                android:backgroundTint="@color/white"
+                android:layout_weight="1"
+                app:cardElevation="4dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:checkable="true">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tx_number_near_me"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:textColor="@color/orange"
+                        android:textSize="32dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:text="10" />
+
+                    <TextView
+                        android:id="@+id/tx_near_me_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="16dp"
+                        android:textColor="@color/gray"
+                        android:textSize="16dp"
+                        app:layout_constraintStart_toStartOf="@id/tx_number_near_me"
+                        app:layout_constraintTop_toBottomOf="@id/tx_number_near_me"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:text="A menos de 1 km" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <!--endregion-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_list_categories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:orientation="horizontal"
+            app:layoutManager="LinearLayoutManager"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/llayout_cv"
+            tools:itemCount="10"
+            tools:listitem="@layout/cv_category_item" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_list_commerce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:orientation="vertical"
+            app:layoutManager="LinearLayoutManager"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rv_list_categories"
+            tools:itemCount="10"
+            tools:listitem="@layout/cv_commerce_item" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
