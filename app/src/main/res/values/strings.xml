@@ -1,14 +1,14 @@
 <resources>
-    <string name="app_name">KlikkinPruebaTecnica</string>
-    <string name="action_settings">Settings</string>
+    <string translatable="false" name="app_name">KlikkinPruebaTecnica</string>
+    <string translatable="false" name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="home_fragment">home fragment</string>
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <string translatable="false" name="home_fragment">home fragment</string>
+    <string translatable="false" name="home_fragment_label">Home Fragment</string>
+    <string translatable="false" name="detail_fragment_label">Detail Fragment</string>
+    <string translatable="false" name="next">Next</string>
+    <string translatable="false" name="previous">Previous</string>
 
-    <string name="lorem_ipsum">
+    <string translatable="false" name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
         volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
         dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
@@ -44,4 +44,15 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+
+    <string name="car_wash">Car wash</string>
+    <string name="shops">Shops</string>
+    <string name="catering">Catering</string>
+    <string name="gas_station">Gas station</string>
+    <string name="electric_scooter">Electric scooter</string>
+    <string name="leisure">Leisure</string>
+    <string name="parking">Parking</string>
+    <string name="parking_payment">Pay Parking</string>
+    <string name="truck">Trucks</string>
+    <string name="others">Others</string>
 </resources>

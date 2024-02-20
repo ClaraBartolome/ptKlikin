@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="car_wash">Lavado de coches</string>
+    <string name="shops">Tiendas</string>
+    <string name="catering">Restaurantes</string>
+    <string name="gas_station">Gasolineras</string>
+    <string name="electric_scooter">Moto eléctrica</string>
+    <string name="leisure">Ocio</string>
+    <string name="parking">Aparcamiento</string>
+    <string name="parking_payment">Aparcamiento de pago</string>
+    <string name="truck">Camiones</string>
+    <string name="others">Otros</string>
+</resources>
